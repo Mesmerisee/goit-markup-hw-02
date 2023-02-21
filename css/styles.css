@@ -1,5 +1,4 @@
 :root {
-  --main-title-color: #2e2f42;
   --secondary-text-font: "Raleway", sans-serif;
   --secondary-title-color: #ffffff;
   --text-color: #434455;
@@ -7,6 +6,10 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  font-weight: 500;
 }
 .visually-hidden {
   position: absolute;
@@ -27,9 +30,8 @@ body {
   list-style: none;
 }
 .text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.5;
 }
 /*---------------header---------------*/
 .header {
@@ -37,21 +39,30 @@ body {
 .header-link {
   font-family: var(--secondary-text-font);
   font-weight: 800;
-  font-size: 18px;
   line-height: 1.33;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-title-color);
+}
+.header-link-span {
+  font-family: var(--secondary-text-font);
+  font-weight: 800;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 .header-list {
 }
 .header-item {
 }
 .header-item-link {
-  font-weight: 500;
-  color: var(--main-title-color);
+}
+.header-item-link:hover .header-item-link:focus {
+  color: #404bbf;
 }
 .header-address {
 }
@@ -63,21 +74,19 @@ body {
   color: var(--text-color);
 }
 .header-address-list-link:hover .header-address-list-link:focus {
-    color: #404BBF;
+  color: #404bbf;
 }
 /*---------------hero---------------*/
 .hero {
-  background: var(--main-title-color);
+  background: #2e2f42;
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--secondary-title-color);
 }
 .hero-button {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   display: flex;
@@ -85,6 +94,10 @@ body {
   letter-spacing: 0.04em;
   color: var(--secondary-title-color);
   cursor: pointer;
+  background: #4d5ae5;
+}
+.hero-button:hover .hero-button:focus {
+  background: #404bbf;
 }
 /*---------------services---------------*/
 .services {
@@ -94,14 +107,11 @@ body {
 .services-item {
 }
 .services-subtitle {
-  font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
 }
 .services-description {
   color: var(--text-color);
+  font-weight: 400;
 }
 /*---------------services---------------*/
 .gallery {
@@ -110,9 +120,7 @@ body {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--main-title-color);
 }
 .gallery-list {
 }
@@ -120,39 +128,34 @@ body {
 }
 /*---------------team---------------*/
 .team {
+  background: #f4f4fd;
 }
 .team-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--main-title-color);
 }
 .team-list {
 }
 .team-item {
 }
 .team-subtitle {
-  font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
 }
 .team-description {
+  font-weight: 400;
   text-align: center;
   color: var(--text-color);
 }
 /*---------------footer---------------*/
 .footer {
-  background: var(--main-title-color);
+  background: #2e2f42;
 }
 .footer-link {
   font-family: var(--secondary-text-font);
   font-weight: 800;
-  font-size: 18px;
   line-height: 1.33;
   display: flex;
   align-items: center;
@@ -163,13 +166,14 @@ body {
 .footer-description {
   color: #e7e9fc;
 }
-/*---------------hero portfolio---------------*/
-.hero-portfolio {
+/*---------------portfolio---------------*/
+.portfolio {
 }
-.hero-portfolio-list {
+.portfolio-list {
 }
-.hero-portfolio-button {
-  font-weight: 500;
+.portfolio-item {
+}
+.portfolio-button {
   font-size: 16px;
   line-height: 1.5;
   display: flex;
@@ -178,26 +182,22 @@ body {
   letter-spacing: 0.04em;
   color: #4d5ae5;
   cursor: pointer;
+  background: #f4f4fd;
 }
-.hero-portfolio-button:hover {
+.portfolio-button:hover {
   color: #ffffff;
+  background: #404bbf;
 }
-.hero-portfolio-button:focus {
+.portfolio-button:focus {
   color: #ffffff;
+  background: #404bbf;
 }
-/*---------------hero portfolio---------------*/
-.portfolio {
+.portfolio-pictures-list {
 }
-.portfolio-list {
-}
-.portfolio-item {
+.portfolio-pictures-item {
 }
 .portfolio-title {
-  font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
 }
 .portfolio-description {
   color: var(--text-color);

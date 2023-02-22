@@ -44,15 +44,9 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #2e2f42;
 }
 .header-link-span {
-  font-family: var(--secondary-text-font);
-  font-weight: 800;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #4d5ae5;
 }
 .header-list {
@@ -60,8 +54,12 @@ body {
 .header-item {
 }
 .header-item-link {
+  color: #2e2f42;
 }
-.header-item-link:hover .header-item-link:focus {
+.header-item-link:hover {
+  color: #404bbf;
+}
+.header-item-link:focus {
   color: #404bbf;
 }
 .header-address {
@@ -73,7 +71,10 @@ body {
   font-weight: 400;
   color: var(--text-color);
 }
-.header-address-list-link:hover .header-address-list-link:focus {
+.header-address-list-link:hover {
+  color: #404bbf;
+}
+.header-address-list-link:focus {
   color: #404bbf;
 }
 /*---------------hero---------------*/
@@ -87,6 +88,8 @@ body {
   color: var(--secondary-title-color);
 }
 .hero-button {
+  font-family: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   display: flex;
@@ -165,6 +168,7 @@ body {
 }
 .footer-description {
   color: #e7e9fc;
+  font-weight: 400;
 }
 /*---------------portfolio---------------*/
 .portfolio {
@@ -174,6 +178,8 @@ body {
 .portfolio-item {
 }
 .portfolio-button {
+  font-family: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   display: flex;
